@@ -27,7 +27,6 @@ type installedPackage struct {
 }
 
 func List(args []string) error {
-	print("Hello")
 	if !shouldPrettify(args) {
 		return brew.Passthrough(append([]string{"list"}, args...))
 	}
